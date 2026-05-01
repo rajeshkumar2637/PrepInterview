@@ -10,7 +10,7 @@ from langgraph.graph import StateGraph, END
 import json
 from datetime import datetime
 
-# ============= ENUMS & DATA TYPES =============
+# ENUMS & DATA TYPE
 
 class AgentRole(Enum):
     ANALYST = "analyst"
@@ -27,7 +27,7 @@ class SkillLevel(Enum):
     IMPORTANT = "important"  # Nice to have
     OPTIONAL = "optional"  # Good to have
 
-# ============= DATA CLASSES =============
+# DATA CLASSES 
 
 @dataclass
 class SkillGap:
@@ -106,7 +106,7 @@ class InterviewSession:
         if not self.created_at:
             self.created_at = datetime.now().isoformat()
 
-# ============= LANGGRAPH STATE =============
+#  LANGGRAPH STATE 
 
 class WorkflowState(TypedDict):
     """Shared state for all agents"""
@@ -119,8 +119,7 @@ class WorkflowState(TypedDict):
     should_continue: bool  # Continue interview?
     error: Optional[str]  # Error tracking
 
-# ============= AGENT BASE CLASS =============
-
+# == AGENT BASE CLASS 
 class BaseAgent:
     """Base class for all interview agents"""
     
@@ -278,7 +277,7 @@ class AnalystAgent(BaseAgent):
         """
 
 
-# ============= INTERVIEWER AGENT =============
+#  INTERVIEWER AGENT 
 
 class InterviewerAgent(BaseAgent):
     """
