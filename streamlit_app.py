@@ -11,7 +11,7 @@ from prepInterview.agents_framework import WorkflowState, InterviewSession
 import uuid
 import os
 
-# ============= PAGE CONFIGURATION =============
+# PAGE CONFIGURATION
 
 st.set_page_config(
     page_title="🤖 AI Interview Assessment",
@@ -20,7 +20,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-#  CUSTOM CSS =============
+#  CUSTOM CSS
 
 st.markdown("""
 <style>
@@ -102,7 +102,7 @@ with col2:
 
 st.markdown("---")
 
-# ============= SIDEBAR =============
+#  SIDEBAR 
 
 with st.sidebar:
     st.header("📋 Navigation")
@@ -136,7 +136,7 @@ with st.sidebar:
     - Streamlit frontend
     """)
 
-# ============= MAIN CONTENT =============
+# ============= MAIN CONTENT
 
 if page == "📤 Upload & Configure":
     st.header("📤 Upload Resume & Job Description")
@@ -449,7 +449,7 @@ elif page == "⚙️ Settings":
         if st.button("💾 Save Settings"):
             st.success("✅ Settings saved!")
 
-# ============= FOOTER =============
+# FOOTER 
 
 st.markdown("---")
 
