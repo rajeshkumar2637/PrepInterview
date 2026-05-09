@@ -1,0 +1,35 @@
+# Multi-Agent Interview Assessment System - Dependencies
+
+# Core Framework
+langgraph>=0.0.1
+langchain>=0.1.0
+langchain-core>=0.1.0
+
+# API & Web
+fastapi>=0.104.1
+uvicorn[standard]>=0.24.0
+streamlit>=1.28.0
+requests>=2.31.0
+
+# Vector Storage
+chromadb>=0.4.0
+
+# Data Processing
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+python-multipart>=0.0.6
+
+# PDF Processing
+PyPDF2>=3.0.1
+
+# Async
+aiofiles>=23.2.0
+httpx>=0.25.0
+
+# Development
+black>=23.0.0
+flake8>=6.0.0
+pytest>=7.4.0
+
+# Environment
+python-dotenv>=1.0.0
